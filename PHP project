@@ -69,6 +69,10 @@ include('dbconnection.php');
 if(isset($_POST['submit']))
   {
   	//getting the post values
+	
+	//getting the pro values
+	
+	$fname=$_post 
     $fname=$_POST['fname'];
     $lname=$_POST['lname'];
     $contno=$_POST['contactno'];
