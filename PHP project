@@ -235,12 +235,14 @@ if (method_exists($page_object, "Loaded")) {
 	$page_object->Loaded();
 }
 
+
+
 echo "<html><head><title>".$page_object->getPageTitle()."</title>\n";
 $jquery_style = "";
 if (DEFINE_STYLE_JQUERY != "") {
 	$jquery_style = DEFINE_STYLE_JQUERY;
 }
-echo "<link type=\"text/css\" rel=\"StyleSheet\" href=\"".BASE_URL."combine-css/styles.php.css,angle.php.css,jquery".JQUERY_UI_VERSION."|".$jquery_style."|jquery-ui-".JQUERY_UI_VERSION.".custom.css\" media=\"screen\" />\n";
+echo "<link type=\"text/css\" rel=\"StyleSheet\" href=\"".BASE_3_URL."combine-css/styles.php.css,angle.php.css,jquery".JQUERY_UI_VERSION."|".$jquery_style."|jquery-ui-".JQUERY_UI_VERSION.".custom.css\" media=\"screen\" />\n";
 echo "<script type=\"text/javascript\" src=\"".BASE_URL."combine-js/jquery|jquery-".JQUERY_VERSION.".min.js,jquery|jquery-ui-".JQUERY_UI_VERSION.".custom.min.js,jquery.cookie.js,pngfix.js,utils.js\"></script>\n";
 echo "<script type=\"text/javascript\" src=\"".BASE_URL."wsp/js/jquery.backstretch.min.js\"></script>\n";
 echo "<meta name=\"Robots\" content=\"noindex, nofollow\" />\n";
@@ -248,6 +250,8 @@ echo "<base href=\"".BASE_URL."\" />\n";
 echo "</head><body>\n";
 echo $page_object->render();
 echo "</body></html>\n";
+
+
 
 
 
